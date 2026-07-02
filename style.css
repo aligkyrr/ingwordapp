@@ -23,6 +23,8 @@ body {
     font-size: clamp(32px, 6vw, 64px);
     font-weight: 800;
     text-align: center;
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 /* BOX */
