@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="box">
+        <h1 id="word">Yükleniyor...</h1>
+    </div>
+
+    <div class="buttons">
+        <div class="row row-top">
+            <button class="btn known" onclick="known()">Biliyorum</button>
+            <button class="btn skip" onclick="skipWord()">Aklıma Gelmedi</button>
+        </div>
+        <div class="row">
+            <button class="btn" onclick="resetProgress()">Sıfırla</button>
+            <button class="btn show" onclick="showAnswer()">Türkçesini Göster</button>
+            <button class="btn" onclick="toggleAdd()">Yeni Kelime Ekle</button>
+        </div>
+    </div>
+
+    <div id="addBox" class="add-box hidden">
+    <input id="engInput" placeholder="İngilizce">
+    <input id="trInput" placeholder="Türkçe">
+    <button class="btn" onclick="addWord()">Kelimeyi Ekle</button>
+</div>
+
+    <p id="progress"></p>
+</div>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
