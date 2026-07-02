@@ -32,9 +32,13 @@ body {
     margin-bottom: 1rem;
     width: 100%;
     max-width: 800px;
-    padding: 1.5rem;
+    padding: 0;
     border-radius: 8px;
     text-align: center;
+}
+
+.title{
+    padding: 1rem;
 }
 
 /* ROW */
@@ -112,10 +116,6 @@ input {
 
     .row {
         flex-direction: column;
-    }
-
-    .box {
-        padding: 0;
     }
 
     #word {
